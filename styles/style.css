@@ -1,4 +1,33 @@
-.header {
-    background-color: red;
-};
+body{
+    padding: 10px;
+    max-width: 760px;
+    justify-self: center;
+    margin: auto;
 
+
+}
+.header{
+    background-color:aqua;
+    border-radius: 25px;
+
+}
+
+.profile_pic{
+    width:200px;
+    height:auto;
+    grid-column: 1;
+    border-radius: 25px;
+    border: 3px solid black;
+
+}
+.head-grid {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 10px;
+}
+.add_line {
+    border-bottom:3px solid black;
+}
