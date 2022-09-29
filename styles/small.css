@@ -6,17 +6,18 @@ body{
 
 
 }
-.header{
+
+header{
     background-color:aqua;
     border-radius: 25px;
+    text-align: center;
 
 }
 
 .profile_pic{
-    width:200px;
+    width:100px;
     height:auto;
-    grid-column: 1;
-    border-radius: 25px;
+    border-radius: 0px;
     border: 3px solid black;
 
 }
@@ -28,6 +29,10 @@ body{
     border: 3px solid black;
     padding: 10px;
 }
+
 .add_line {
     border-bottom:3px solid black;
+}
+h1 h2 h3 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
