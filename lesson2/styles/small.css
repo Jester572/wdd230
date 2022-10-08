@@ -2,9 +2,20 @@ body{
     background-color: white;
     text-align: center;
     width: 100%;
+    margin:15px
     
 }
-/*header{}*/
+header{
+    background-color: rgb(8, 8, 111);
+    color: white;
+    width: 98%;
+    border:5px solid black;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
       
 
 main{
