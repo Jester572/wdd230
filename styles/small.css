@@ -31,7 +31,7 @@ header{
 }
 
 .add_line {
-    border-bottom:3px solid black;
+    border-top:3px solid black;
 }
 h1 h2 h3 {
     font-family: 'Source Sans Pro', sans-serif;
