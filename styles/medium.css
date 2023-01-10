@@ -1,8 +1,11 @@
 @media only screen and (min-width: 32.5em) {
 
 header{
-    background-color:coral;
+    background-color:teal;
     border-radius: 25px;
+}
+footer{
+    background-color: teal;
 }
 .profile_pic{
     width:200px;

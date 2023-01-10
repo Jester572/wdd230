@@ -1,7 +1,9 @@
 @media only screen and (min-width: 64em) {
 
 header{
-    background-color: red;
+    background-color: coral;
 }
-
+footer{
+    background-color: coral;
+}
 }
