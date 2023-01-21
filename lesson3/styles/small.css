@@ -1,0 +1,45 @@
+header {
+    background-color: teal;
+    border: 5px solid black;
+    border-radius: 25px;
+    text-align: center;
+
+}
+body{
+    max-width: 800px;
+    font-size: 20;
+    margin: 20px auto;
+}
+ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
+    overflow: hidden;
+    padding: 25px ;
+}
+li {
+    
+    background-color: aqua;
+    color: black;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 5px;
+    border: 1px black solid;
+    padding: .75em;
+    font-size: larger;
+
+}
+li:hover {
+    background-color: coral;
+
+}
+.active {
+    background-color: coral;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
