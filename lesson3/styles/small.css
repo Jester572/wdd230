@@ -25,7 +25,7 @@ ul {
     padding: 25px ;
     margin: 0px;
 }
-li {
+ul li {
     
     background-color: aqua;
     color: black;
@@ -43,7 +43,7 @@ section{
     border-radius: 25px;
 
 }
-li:hover {
+ul li:hover {
     background-color: coral;
 
 }
@@ -58,11 +58,10 @@ nav ul li a {
     text-decoration: none;
     color: black;
 }
-h2 {
-    margin: 5px 15px;
-}
+
 p {
-    margin: 5px 15px;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -78,4 +77,37 @@ footer{
     text-align: center;
     padding: 10px;
     color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 5px 15px;
+}
+
+
+
+
+/* Color pallete CSS*/
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 33%;
+    height: 3em;
+}
+.primary {
+    background-color: #008080;
+}
+.secondary {
+    background-color: #00FFFF;
+}
+.accent1 {
+    background-color: coral;
 }
