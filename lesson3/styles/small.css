@@ -6,7 +6,8 @@ header {
 
 }
 body{
-    max-width: 800px;
+    max-width: 1000px;
+    min-width:300px ;
     font-size: 20;
     margin: 20px auto;
     border: 5px Solid black;
@@ -22,6 +23,7 @@ ul {
     list-style: none;
     overflow: hidden;
     padding: 25px ;
+    margin: 0px;
 }
 li {
     
@@ -31,7 +33,7 @@ li {
     text-align: center;
     margin: 5px;
     border: 1px black solid;
-    padding: .75em;
+    padding: 0px;
     font-size: larger;
 
 }
@@ -47,12 +49,14 @@ li:hover {
 }
 .active {
     background-color: coral;
+    color: black;
 }
 nav ul li a {
     display: block;
     text-align: center;
     padding: 1em;
     text-decoration: none;
+    color: black;
 }
 h2 {
     margin: 5px 15px;
@@ -63,6 +67,8 @@ p {
 
 img {
     margin: 15px;
+    width: 200px;
+    height: 149px;
 }
 
 footer{
@@ -70,4 +76,6 @@ footer{
     border: 5px solid black;
     border-radius: 0px 0px 25px 25px;
     text-align: center;
+    padding: 10px;
+    color: white;
 }
