@@ -1,5 +1,5 @@
 header {
-    background-color: teal;
+    background-color: #ABA9BF;
     border: 5px solid black;
     border-radius: 25px 25px 0px 0px;
     text-align: center;
@@ -44,11 +44,11 @@ section{
 
 }
 ul li:hover {
-    background-color: coral;
+    background-color: #FF9670;
 
 }
 .active {
-    background-color: coral;
+    background-color: #FF9670;
     color: black;
 }
 nav ul li a {
@@ -71,12 +71,11 @@ img {
 }
 
 footer{
-    background-color: teal;
+    background-color: #ABA9BF;
     border: 5px solid black;
     border-radius: 0px 0px 25px 25px;
     text-align: center;
     padding: 10px;
-    color: white;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -102,12 +101,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 3em;
 }
 .primary {
-    background-color: #008080;
-    color: white;
+    background-color: #ABA9BF;
 }
 .secondary {
     background-color: #00FFFF;
 }
 .accent1 {
-    background-color: coral;
+    background-color: #FF9670;
 }
