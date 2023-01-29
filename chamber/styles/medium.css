@@ -1,3 +1,28 @@
 @media only screen and (min-width: 32.5em) {
-    
+    .noline {
+        display: flex;
+        justify-content: center;
+       
+    }
+    .noline span, .noline p {
+        margin: 15px 5px;
+        padding-right: 10px;
+        border-right: 1px black solid ;
+    }
+    .noline div {
+        display: block;
+        width: 100%;
+    }
+    #information {
+        display: flex;
+    }
+    #map {
+        float: right;
+        margin-top: 25px;
+        width: 100%;
+
+        
+
+    }
+
 }
