@@ -11,13 +11,13 @@ hamburger.addEventListener("click", () => {if(hamburger.innerHTML == "X"){hambur
 
 //updateTime
 const addDate = document.querySelector(".timeNow");
-const now = new Date('August 19, 1975 23:15:30');
+const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(now);
 
 addDate.innerHTML = `${fulldate}`;
 
 // join us banner at top of page
-const join = document.querySelector(".join") 
+const join = document.querySelector(".joinUs") ;
 if (now.getDay() == 1 || now.getDay() == 2) {
-    join.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
+    join.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }
