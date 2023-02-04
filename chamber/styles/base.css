@@ -29,7 +29,7 @@ footer{
 section {
     margin: 20px;
     padding:10px;
-    border: 5px solid black;
+    border: 3px solid black;
     display: flex;
 }
 section p {

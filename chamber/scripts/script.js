@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {if(hamburger.innerHTML == "X"){hambur
 
 //updateTime
 const addDate = document.querySelector(".timeNow");
- now = new Date('August 19, 1975 23:15:30');
+const now = new Date('August 19, 1975 23:15:30');
 const fulldate = new Intl.DateTimeFormat("en-US",{dateStyle: "full"}).format(now);
 
 addDate.innerHTML = `${fulldate}`;
