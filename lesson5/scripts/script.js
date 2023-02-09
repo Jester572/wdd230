@@ -5,7 +5,7 @@ const input = document.querySelector("input");
 
 button.addEventListener("click", function() {
 
-   
+   if (input.value != "") {
 
     const list_item = document.createElement("li");
     const list_text = document.createElement("span");
@@ -23,5 +23,5 @@ button.addEventListener("click", function() {
     list_button.addEventListener("click", function () {
         list.removeChild(list_item);
         });
-
+    }
 });
