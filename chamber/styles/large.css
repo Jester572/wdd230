@@ -4,12 +4,10 @@
     }
     nav ul li {
         display: block;
-        padding: auto;
         text-align: center;
 
     }
     nav ul {
-        padding: auto;
         display: flex;
         text-align: center;
 
