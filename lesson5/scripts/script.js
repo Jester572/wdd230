@@ -19,6 +19,7 @@ button.addEventListener("click", function() {
     list.appendChild(list_item);
 
     input.value = "";
+    input.focus()
 
     list_button.addEventListener("click", function () {
         list.removeChild(list_item);

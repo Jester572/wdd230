@@ -71,10 +71,15 @@ header img{
     grid-row: 2 ;
     display: flex;
     width: 75%;
-
-
     
 
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#information img {
+    width: 20%;
 }
 header h1 {
     grid-column:1 ;
