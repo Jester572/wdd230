@@ -72,6 +72,13 @@
         grid-column: 2;
 
     }
-
+    #weather-icon {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 0rem;
+        float: none;
+    
+    }
 
 }
