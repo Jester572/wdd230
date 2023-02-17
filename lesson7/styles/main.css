@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+img{
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+}
