@@ -6,11 +6,12 @@ const loadImages = (image) => {
         image.removeAttribute("data-src");
     };
 };
-
+//options for image
 const imageOptions = {
     threshold: 1,
     rootMargin: "0px 0px 50px 0px"
 };
+
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((items, observer) => {

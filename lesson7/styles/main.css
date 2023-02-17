@@ -7,9 +7,12 @@ body{
 h1{
     text-align: center;
     font-size: 50px;
+    background-color: blueviolet;
+    border: 5px solid gray;
 }
 img{
     background-color: aqua;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
+
 }
