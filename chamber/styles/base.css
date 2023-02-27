@@ -76,6 +76,7 @@ header img{
 picture{
     width: 100%;
     height: auto;
+    margin: auto;
 }
 img{
     width: 100%;
@@ -107,7 +108,7 @@ header h2 {
 nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
 }
-nav ul li.active a {
+.active {
     background-color: #FF9670;
     
 }
