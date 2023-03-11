@@ -1,0 +1,26 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:15px
+  }
+
+.card {
+    padding: 15px;
+    border: 3px solid black;
+    align-items: center;
+    text-align: center;
+    background-color: coral;
+    box-shadow: 2px 4px 8px black;
+}
+img {
+    width: 100%;
+    height:auto;
+}
+h1{
+    text-align: center;
+    
+    background-color: rgba(255, 255, 255, 0.703);
+}
+body{
+    background-color: aqua;
+}
