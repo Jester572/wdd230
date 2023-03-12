@@ -1,0 +1,16 @@
+body{
+    margin: 1 auto;
+}
+main{
+    border: 3px black solid;
+    text-align: center;
+    background-color: aqua;
+    box-shadow: 2px 2px 4px;
+}
+h1{
+    background-color: coral;
+    margin:  15px 50px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 4px grey;
+}
