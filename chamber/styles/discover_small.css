@@ -14,5 +14,8 @@
     .discoverSection picture {
         float: none;
     }
+    .discoverSection img:hover {
+        box-shadow: none;
+    }
 
 }

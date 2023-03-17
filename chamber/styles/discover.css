@@ -39,3 +39,6 @@ img[data-src] {
     grid-column: 1 / span 3;
     font-size: .75em;
 }
+.discoverSection img:hover {
+    box-shadow: 0 0 50px #333;
+}
