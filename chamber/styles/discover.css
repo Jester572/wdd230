@@ -42,3 +42,31 @@ img[data-src] {
 .discoverSection img:hover {
     box-shadow: 0 0 50px #333;
 }
+
+#demographicData{
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 15px;
+    background-color: aqua;
+    margin: 15px 0px;
+    padding: 15px;
+}
+
+#tempImg{
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+#demoInfo{
+    grid-column: 1;
+    grid-row: 2;
+}
+#demographicData h2{
+    text-align: center;
+    grid-column: 1 / span 3;
+    border-bottom: 1px solid black ;
+    padding-bottom:5px ;
+}
