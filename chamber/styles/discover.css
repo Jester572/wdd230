@@ -20,6 +20,7 @@ main {
 }
 .discoverSection img {
     width: 400px;
+    height: auto;
     float: left;
 }
 .discoverSection h2 {

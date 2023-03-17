@@ -5,6 +5,7 @@
     }
     .discoverSection img{
         width: 100%;
+        height: auto;
     }
     
     .discoverSection div {
