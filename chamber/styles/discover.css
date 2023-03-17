@@ -69,4 +69,5 @@ img[data-src] {
     grid-column: 1 / span 3;
     border-bottom: 1px solid black ;
     padding-bottom:5px ;
+    margin: 0px;
 }
