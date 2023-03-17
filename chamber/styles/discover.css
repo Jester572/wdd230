@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.discoverSection {
+    border: 1px solid black;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.discoverSection div {
+    margin: 15px;
+    float: right;
+    margin: auto 15px;
+}
+
+.discoverSection picture {
+    float: left;
+}
+.discoverSection img {
+    width: 400px;
+    float: left;
+}
+.discoverSection h2 {
+    text-align: center;
+}
+img{
+    filter: blur(0em);
+  transition: filter 3s;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+#lastVisit {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+    font-size: .75em;
+}

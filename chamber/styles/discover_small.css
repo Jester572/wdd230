@@ -1,0 +1,17 @@
+@media only screen and (max-width: 40em) {
+
+    .discoverSection {
+        flex-direction: column;
+    }
+    .discoverSection img{
+        width: 100%;
+    }
+    
+    .discoverSection div {
+        float: none;
+    }
+    .discoverSection picture {
+        float: none;
+    }
+
+}
