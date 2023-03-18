@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/medium.css">
     <link rel="stylesheet" type="text/css" href="./styles/large.css">
+    <link rel="stylesheet" type="text/css" href="./styles/join.css">
+    <link rel="stylesheet" type="text/css" href="./styles/join_small.css">
     <title>Join</title>
 </head>
 <body>
@@ -41,9 +43,89 @@
     <main id="joinpage">
 
         <h1>Join Us</h1>
-        <h2>Enter the information and desired selections to become a part of this great organization!</h2>
+        <h3>Enter the information and desired selections to become a part of this great organization!</h3>
 
         <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="first name" required></label>
+                <label class="top">Last Name* <input type="text" name="last name" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235554567" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Company Information</legend>
+                <label class="top">Business Name*<input type="text" name="Business Name" required></label>
+                <label class="top">Position Title <input type="text" pattern="[a-zA-Z\s\-]{7,}" name="Use a minimum of 7 characters,spaces,hyphins. No special characters or numbers."></label>
+                <label class="top">Business Description<textarea name="Company Discription"></textarea></label>
+            </fieldset>
+
+            <fieldset id="memberField">
+                <legend>Membership</legend>
+                <div>
+                    <h3>Select desired Membership</h3>
+                    <label class="sbs"><input type="radio" name="audience" value="nonprofit"> Non-profit </label>
+                    <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="audience" value="silver"> Silver</label>
+                    <label class="sbs"><input type="radio" name="audience" value="gold"> gold </label>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Memberships</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Non-Profit</th>
+                            <th scope="col">Bronze</th>
+                            <th scope="col">Silver</th>
+                            <th scope="col">Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Price(yearly)</th>
+                            <td>$0</td>
+                            <td>$200</td>
+                            <td>$350</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Trainings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Event Discounts</th>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Special Meetings</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bi-Anual Dinner</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </fieldset>
+
+            <input type="hidden" name="datetime" id="loadDate">
+            <input type="submit" value="Apply for Membership" class="submitBtn">
             
         </form>
 
