@@ -49,21 +49,13 @@
             <p>Event</p>
         </section>
         <section id="weather">
-            <h3>Weather</h3>
-            <div id="weather-icon">
-                <img  src="./images/partly-cloudy.png" alt="Partly Sunny">
-                <p>Partly Cloudy</p>
-            </div>
-            <div id="temp">
-                Temp: <span>40</span>°F
-            </div>
-            <div id="windSpeed">
-                Speed:   <span>5</span>mph
-            </div>
-            <div id="windChill">
-                Wind Chill:  
-                <span></span>
-            </div>
+            <h2>Weather</h2>
+            <p>The current temperature in Fairbanks, Logan is <span id="current-temp"></span> &deg;F</p>
+            <figure>
+            <img src="" alt="" id="weather-icon" />
+            <figcaption></figcaption>
+            </figure>
+            <script defer src="scripts/weatherapi.js"></script>
         </section>
         <section id="news">
             <p>News Release</p>
@@ -81,7 +73,6 @@
         <div id="information">
             <img src="./images/LogoMakr-3q9ab6.webp" alt="Company Logo">
             <div>
-                <h2>Logan Chamber of Commerce</h2>
                 <p>Address:</p>
                 <p>E-mail</p>
                 <p>Phone #:</p>
@@ -100,6 +91,6 @@
 
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/weatherapi.js"></script>
 </body>
 </html>
