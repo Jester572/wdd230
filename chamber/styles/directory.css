@@ -20,7 +20,7 @@ section {
 
     box-shadow: 2px 4px 8px black;
 }
-img {
+.card img {
     display: flex;
     width: 100%;
     height:auto;
@@ -28,18 +28,12 @@ img {
     align-self: center;
     margin: auto;
 }
-h1{
-    text-align: center;
-    
-    background-color: rgba(255, 255, 255, 0.703);
-}
-h2 {
+
+.card h2 {
     text-align: center;
 }
-p, a{
+.card p, .card a{
     margin: 5px;
 }
 
-img {
-    margin: 15px 0px;
-}
+
