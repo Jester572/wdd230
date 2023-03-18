@@ -70,6 +70,7 @@ header img{
     grid-row: 2 ;
     display: flex;
     width: 75%;
+    height: auto;
     
 
 }
@@ -84,6 +85,7 @@ img{
 }
 #information img {
     width: 20%;
+    height: auto;
 }
 header h1 {
     grid-column:1 ;
