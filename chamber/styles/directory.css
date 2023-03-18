@@ -1,0 +1,45 @@
+main {display: 
+    block;
+}
+
+section {
+    display: block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:15px
+  }
+
+.card {
+    padding: 15px;
+    border: 3px solid black;
+    align-items: center;
+    text-align: left;
+
+    box-shadow: 2px 4px 8px black;
+}
+img {
+    display: flex;
+    width: 100%;
+    height:auto;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    
+    background-color: rgba(255, 255, 255, 0.703);
+}
+h2 {
+    text-align: center;
+}
+p, a{
+    margin: 5px;
+}
+
+img {
+    margin: 15px 0px;
+}
