@@ -31,9 +31,21 @@ section {
 
 .card h2 {
     text-align: center;
+    background-color: coral;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
 }
-.card p, .card a{
+.card p{
     margin: 5px;
+    font-size: larger;
+}
+.web{
+    display: flex;
+    width: 100%;
+    margin-left: 40%;
+
+
 }
 
 

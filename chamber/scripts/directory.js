@@ -45,6 +45,7 @@ function displayMembers(members) {
             let website = document.createElement('a');
             website.textContent = "Website";
             website.setAttribute('href', member.website);
+            website.setAttribute('class','web')
             card.appendChild(website);
         }
         card.appendChild(portrait);
