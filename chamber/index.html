@@ -50,19 +50,30 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p>The current temperature in Fairbanks, Logan is <span id="current-temp"></span> &deg;F</p>
-            <figure>
-            <img src="" alt="" id="weather-icon" />
-            <figcaption></figcaption>
-            </figure>
-            <script defer src="scripts/weatherapi.js"></script>
+            <figure id="weather-icon">
+                <p><span id="temp"></span> &deg;F</p>
+                <img src="" alt=""  />
+                <figcaption></figcaption>
+            </figure>            
+            
+            <p>High:<span id="tempHigh"></span> &deg;F</p>
+            <p>Low:<span id="tempLow"></span> &deg;F</p>
+            <p>Wind:<span id="windSpeed"></span> MPH</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+
         </section>
         <section id="news">
             <p>News Release</p>
         </section>
         <section id="spotlight">
-            <p class="half">spotlight 1</p>
-            <p class="half">spotlight 2</p>
+            <div class="half" id="spotlight1">
+                <h2>spotlight 1</h2>
+
+            </div>
+            <div class="half" id="spotlight2">
+                <h2>spotlight 2</h2>
+
+            </div>
         </section>
         <section id="join">
             <p>Join</p>
@@ -92,5 +103,8 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="./scripts/weatherapi.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/directory.js"></script>
+
 </body>
 </html>

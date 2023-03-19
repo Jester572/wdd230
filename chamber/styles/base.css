@@ -173,11 +173,25 @@ nav ul li a:hover {
 }
 #join {
     display: none;
+
+
+
+
+/*------------- Weather api------------*/
 }
 #weather {
     display: block;
+    padding: 20px;
+    background-image: linear-gradient(rgb(78, 195, 241),white);
     
 }
+
+#weather h2 {
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
 #weather-icon  img{
     width: 100%;
     height: auto;
@@ -185,10 +199,22 @@ nav ul li a:hover {
 }
 #weather-icon {
     position: relative;
-    bottom: 5em;
+    bottom: 1.5rem;
     float: right;
+    width: 5rem;
+    text-align: center;
+    background-color: aqua;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    margin:0px 20px;
+    box-shadow: 2px 2px 4px gray;
 }
 
 #weather div {
     margin: 5px 0px;
 }
+
+
+
+

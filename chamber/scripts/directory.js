@@ -1,7 +1,7 @@
-const url = "./data/data.json";
+const file = "./data/data.json";
 
 async function getCompanyData() {
-    const response = await fetch(url);
+    const response = await fetch(file);
     const data = await response.json();
     console.table(data.members)
     displayMembers(data.members);
@@ -45,11 +45,29 @@ function displayMembers(members) {
             let website = document.createElement('a');
             website.textContent = "Website";
             website.setAttribute('href', member.website);
-            website.setAttribute('class','web')
+            website.setAttribute('class','web');
             card.appendChild(website);
         }
+
         card.appendChild(portrait);
-        cards.appendChild(card);
+        if (cards != null) {
+            cards.appendChild(card);
+        }
+
+        // let spotLight1 = document.querySelector("#spotlight1");
+        // let spotLight2 = document.querySelector("#spotlight2");
+        // console.log(document.querySelector('#spotlight1 h2').textContent);
+        // if (document.querySelector('#spotlight1 h2').textContent == member.companyName) {
+        //     console.log(document.querySelector('#spotlight1 h2').textContent);
+        //     spotLight1.appendChild(portrait);
+        //     spotLight1.appendChild(address);
+        //     spotLight1.appendChild(phone);
+        // } else if (document.querySelector('#spotlight2 h2').textContent == member.companyName) {
+        //     spotLight2.appendChild(portrait);
+        //     spotLight2.appendChild(address);
+        //     spotLight2.appendChild(phone);
+        // };
+        
     });
 }
 getCompanyData();
