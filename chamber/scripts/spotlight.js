@@ -8,7 +8,7 @@ async function getCompanyData() {
 };
 
 function displayMembers(members) {
-    const cards = document.querySelector('div.cards'); 
+
 
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -37,7 +37,7 @@ function displayMembers(members) {
 
         
 
-        card.appendChild(h2);
+        // card.appendChild(h2);
         card.appendChild(address);
         card.appendChild(phone);
         
@@ -50,12 +50,23 @@ function displayMembers(members) {
         }
 
         card.appendChild(portrait);
-        if (cards != null) {
-            cards.appendChild(card);
-        }
+  
+        
+
 
         
         
+
+        if (document.querySelector('#spotlight1 h2').textContent == member.companyName) {
+            let spotLight1 = document.querySelector("#spotlight1");
+            console.log(document.querySelector('#spotlight1 h2').textContent);
+            spotLight1.appendChild(card);
+
+        } else if (document.querySelector('#spotlight2 h2').textContent == member.companyName) {
+            let spotLight2 = document.querySelector("#spotlight2");
+            console.log(document.querySelector('#spotlight2 h2').textContent);
+            spotLight2.appendChild(card);
+        };
         
     });
 }

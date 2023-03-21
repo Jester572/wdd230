@@ -21,13 +21,6 @@
         display: flex;
     }
 
-    #map {
-        float: right;
-        margin-top: 25px;
-        width: 100%;
-
-    }
-
     .half {
         width: 50%;
     }

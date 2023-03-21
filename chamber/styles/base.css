@@ -30,7 +30,7 @@ section {
     margin: 20px;
     padding:10px;
     border: 3px solid black;
-    display: flex;
+    display: block;
 }
 section p {
     display: block;
@@ -89,10 +89,22 @@ img{
 }
 
 #information img {
-    width: 17%;
+    width: 8rem;
+    height: 8rem;
+    margin: 5px
+}
+
+#information #map img {
+    width: 35%;
     height: auto;
     margin: 5px
 }
+
+#footerData{
+    margin: auto;
+    margin-left: 15px;
+}
+
 header h1 {
     grid-column:1 ;
     grid-row: 1;
@@ -216,5 +228,47 @@ nav ul li a:hover {
 }
 
 
+/*----------Spotlight---------------*/
 
 
+
+#spotlight1, #spotlight2{
+    display: block;
+
+  }
+
+.card {
+    padding: 15px;
+    border: 3px solid black;
+    align-items: center;
+    text-align: left;
+    margin: 5px;
+    box-shadow: 2px 4px 8px black;
+}
+.card img {
+    display: flex;
+    width: 100%;
+    height:auto;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+}
+
+.card h2 {
+    text-align: center;
+    background-color: coral;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.card p{
+    margin: 5px;
+    font-size: larger;
+}
+.web{
+    display: flex;
+    width: 100%;
+    margin-left: 40%;
+
+
+}
