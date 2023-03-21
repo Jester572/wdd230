@@ -6,7 +6,6 @@
     <title>Chamber of Commerce</title>
     <meta name="description" content="The main page for  a Chamber of commerce website for Logan Utah">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/medium.css">
     <link rel="stylesheet" type="text/css" href="./styles/large.css">
@@ -39,14 +38,19 @@
     <main>
         <section id="hero">
             <picture>
-                <source srcset="./images/Hero image800.webp" media="(min-width:64em)">
+                <!-- <source srcset="./images/Hero image800.webp" media="(min-width:64em)">
                 <source srcset="./images/Hero image500.webp" media="(min-width:32.5em)">
-                <source srcset="./images/Hero image200.webp" media="(min-width:300px)">
-                <img src="./images/Hero image.jpg" alt="Hero Image">
+                <source srcset="./images/Hero image200.webp" media="(min-width:300px)"> -->
+                <img id="heroImage" src="./images/logan_valley.webp" alt="">
             </picture>
         </section>
         <section id="event">
-            <p>Event</p>
+            <h2>Young Truck and Trailer</h2>
+            <img src="./images/ribbon-cutting.webp" alt="Ribbon Cutting">
+            <p>Join us for our ribbon cutting ceremony at Young Truck and Trailer!</p>
+            <p><strong>Address:</strong> 2900 US-89, Logan, UT 84321</p>
+            <p><strong>Date:</strong> March 25</p>
+            <p><strong>Time:</strong> 10:00 AM - 11:00 AM</p>
         </section>
         <section id="weather">
             <h2>Weather</h2>
@@ -76,7 +80,7 @@
             </div>
         </section>
         <section id="join">
-            <p>Join</p>
+            <a class="button" href="join.html">Join Us!</a>
         </section>
 
     </main>
@@ -90,7 +94,7 @@
             </div>
             <div id="map">
                 <p >Location:</p>
-                <img src="./images/Logan_map.jpg" alt="Map of Logan Chamber of Commerce">
+                <a href="https://www.google.com/maps/place/5+S+Main+St,+Logan,+UT+84321/@41.7309171,-111.8392241,16z/data=!4m5!3m4!1s0x87547e1290e13667:0x4b7b7fae4fc0e968!8m2!3d41.7311432!4d-111.8353574"><img src="./images/Logan_map.webp" alt="Map of Logan Chamber of Commerce"></a>
             </div>    
         </div>
         <div id="subfooter">
@@ -108,6 +112,7 @@
     <script src="./scripts/weatherapi.js"></script>
     <script src="./scripts/windchill.js"></script>
     <script src="./scripts/spotlight.js"></script>
+    <script src="./scripts/change_img.js"></script>
 
 </body>
 </html>

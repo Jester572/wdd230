@@ -30,8 +30,10 @@ footer{
 section {
     margin: 20px;
     padding:10px;
-    border: 3px solid black;
     display: block;
+    border: 2px solid rgb(77, 73, 73);
+    box-shadow: 4px 4px 8px 4px rgb(76, 72, 72);
+
 }
 section p {
     display: block;
@@ -87,6 +89,7 @@ img{
 
 .socialMedia img {
     width: 2.5rem;
+    height: auto;
 }
 
 #information img {
@@ -96,7 +99,7 @@ img{
 }
 
 #information #map img {
-    width: 35%;
+    width: 45%;
     height: auto;
     margin: 5px
 }
@@ -175,7 +178,8 @@ nav ul li a:hover {
 }
 
 .responsive li {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .joinUs {
@@ -185,18 +189,32 @@ nav ul li a:hover {
     text-align: center;
 }
 #join {
-    display: none;
-
+    display: flex;
+    padding: 20px;
+    background-image: linear-gradient(rgb(78, 195, 241),white);
 
 
 
 /*------------- Weather api------------*/
 }
-#weather {
+#weather, #event {
     display: block;
-    padding: 20px;
+    padding: 40px;
     background-image: linear-gradient(rgb(78, 195, 241),white);
     
+}
+
+#hero{
+    border: none;
+    box-shadow: none;
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+#news {
+    display: block;
+    padding: 20px;
+    background-image: linear-gradient(to right,rgb(78, 195, 241),#ABA9BF,#FF9670);
 }
 
 #weather h2 {
@@ -215,6 +233,7 @@ nav ul li a:hover {
     bottom: 1.5rem;
     float: right;
     width: 5rem;
+    height: auto;
     text-align: center;
     background-color: aqua;
     padding: 5px;
@@ -232,10 +251,13 @@ nav ul li a:hover {
 /*----------Spotlight---------------*/
 
 #spotlight{
-    background-image: linear-gradient(coral,white);
+    background-image: linear-gradient(#FF9670,white);
+}
+#spotlight p{
+    padding: 15px 0px;
 }
 
-#spotlight h2{
+h2{
     text-align: center;
 }
 
@@ -251,7 +273,7 @@ nav ul li a:hover {
     text-align: center;
     margin: 5px;
     box-shadow: 2px 4px 8px black;
-    background-image: linear-gradient(white,coral);
+    background-image: linear-gradient(white,#FF9670);
 }
 .card img {
     display: flex;
@@ -264,7 +286,7 @@ nav ul li a:hover {
 
 .card h2 {
     text-align: center;
-    background-color: coral;
+    background-color: #FF9670;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -278,4 +300,18 @@ nav ul li a:hover {
     font-size: x-large;
     
 
+}
+.button {
+    background-color: #1c87c9;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 4px 8px black;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+    cursor: pointer;
 }
