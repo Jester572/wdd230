@@ -3,8 +3,9 @@
 body{
     max-width: 1000px;
     min-width: 320px;
-    margin: auto;
-    padding: 10px;
+    margin: 15px auto;
+    border: 2px solid rgb(77, 73, 73);
+    box-shadow: 2px 2px 8px 4px rgb(76, 72, 72);
 
     
 }
@@ -230,7 +231,13 @@ nav ul li a:hover {
 
 /*----------Spotlight---------------*/
 
+#spotlight{
+    background-image: linear-gradient(coral,white);
+}
 
+#spotlight h2{
+    text-align: center;
+}
 
 #spotlight1, #spotlight2{
     display: block;
@@ -241,9 +248,10 @@ nav ul li a:hover {
     padding: 15px;
     border: 3px solid black;
     align-items: center;
-    text-align: left;
+    text-align: center;
     margin: 5px;
     box-shadow: 2px 4px 8px black;
+    background-image: linear-gradient(white,coral);
 }
 .card img {
     display: flex;
@@ -262,13 +270,12 @@ nav ul li a:hover {
     padding: 5px;
 }
 .card p{
-    margin: 5px;
     font-size: larger;
 }
 .web{
-    display: flex;
-    width: 100%;
-    margin-left: 40%;
-
+    text-align: center;
+    margin: auto;
+    font-size: x-large;
+    
 
 }
