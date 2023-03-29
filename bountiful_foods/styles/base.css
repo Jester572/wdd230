@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #8BC34A;
+    --secondary-color: #795548;
+    --accent-color: #FFC107;
+}
+header {
+    text-align: center;
+
+}
+
+
+
+h1, h2, h3 {
+    font-family: SignPainter-HouseSlant;
+}
