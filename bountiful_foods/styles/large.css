@@ -1,0 +1,28 @@
+@media only screen and (min-width: 64em) {
+    #menu {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+
+    }
+    nav ul {
+        display: flex;
+        text-align: center;
+        box-shadow: 2px 2px 8px  black;
+        border: 3px solid var(--secondary-color);
+
+    }
+    #small-navigation {
+        display: none;
+    }
+
+    #large-navigation {
+        display: flex;
+    }
+
+    .socialMedia {
+        margin: 0px;
+    }
+}

@@ -1,15 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Source+Sans+Pro&display=swap');
+
+
 :root {
     --primary-color: #8BC34A;
     --secondary-color: #795548;
     --accent-color: #FFC107;
 }
-header {
-    text-align: center;
+/* Header */
 
+header {
+    display: block;
+    background-color: var(--primary-color);
+
+}
+
+#upperHeader {
+    display: flex;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#lowerHeader {
+    display: flex;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+nav {
+    margin:  1em auto;
+    margin-top: 3em;
+    display: flex;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+    background-color: #4e7d193f;
+
+
+    
+    
+}
+nav ul li {
+    display: none;
+    flex: 1 1 auto;
+    background-color: var(--accent-color);
+    border: 2px solid rgba(0,0,0, .30);
+    margin: 5px;
+    
+
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: .8rem 2vw;
+    color: black;
+
+
+}
+
+#large-navigation {
+    display: none;
+}
+
+#small-navigation {
+    display: block;
+    margin: 0.5rem 0px;
+    width: 50%;
+   
+}
+
+
+
+.socialMedia {
+    padding: 5px;
+    font-size: larger;
+    margin: auto;
+    margin-right: 15px;
+
+}
+
+.socialMedia p a {
+    margin: 0px;
+    padding: 1em;
+    color: black;
+}
+
+.socialMedia a { 
+    padding-top: 1.5em;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+#menu {
+    margin: 0px auto;
+    padding: 5px 98%;
 }
 
 
 
 h1, h2, h3 {
-    font-family: SignPainter-HouseSlant;
+    font-family: 'Delicious Handrawn', sans-serif;
+    margin: 10px;
+
+}
+
+
+/*---Body---*/
+
+body {
+    margin: 0px;
+
+}
+
+/*---Links--*/
+a {
+    text-decoration: none;
+}
+
+
+/*---Images---*/
+
+.logo img {
+    width: 30%;
+    height: auto;
 }
