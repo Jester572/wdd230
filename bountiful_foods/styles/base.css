@@ -104,8 +104,11 @@ a:hover {
     display:block;
     text-align:center;
     padding: 5px;
-    
+}
 
+.responsive li {
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3 {
