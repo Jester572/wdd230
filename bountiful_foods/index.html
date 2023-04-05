@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods</title>
+    <meta name="description" content="The main page for Bountiful Foods website">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/medium.css">
     <link rel="stylesheet" type="text/css" href="./styles/large.css">
@@ -16,7 +18,7 @@
         <div id="upperHeader">
 
             <div class="logo">
-                <img src="./images/android-chrome-192x192.png">
+                <img src="./images/android-chrome-192x192.png" alt="Bountiful Foods Logo">
                 <h1>Bountiful Foods</h1>
             </div>
 
@@ -62,6 +64,48 @@
                 <p>Fresh Food From Local Farms</p>
             </div> 
         </div>
+        <div id="body-grid">
+
+            <div id="weather">
+                <h2>Current Weather</h2>
+                <figure id="weather-icon">
+                    <p><span id="temp"></span></p>
+                    <p><strong>Humidity:<span id="humidity"></span>%</strong></p>
+                    <img src="" alt=""  />
+                    <figcaption></figcaption>
+                </figure>            
+                
+                <div class="doubleContainer"><strong>
+                    <div>
+                        <h2>High/Low</h2>
+                        <p>High:<span id="tempHigh"></span> &deg;F</p>
+                        <p>Low:<span id="tempLow"></span> &deg;F</p>
+                    </div>
+                    <div>
+                        <h2>Wind</h2>
+                        <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+                        <p>Wind Chill: <span id="windChill"></span></p>
+                    </div>
+                </div></strong>
+            </div>
+            <div id="ten-day">
+                <h2>3-Day Forecast</h2>
+                <div id="day1">
+                    <p></p>
+
+                </div>
+
+                <div id="day2">
+                    <p></p>
+
+                </div>
+
+                <div id="day3">
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -74,4 +118,7 @@
     <script src="./scripts/main.js"></script>
     
 </body>
+<script src="./scripts/weatherapi.js"></script>
+<script src="./scripts/threeDay.js"></script>
+<script src="./scripts/windchill.js"></script>
 </html>
