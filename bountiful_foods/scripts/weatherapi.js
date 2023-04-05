@@ -34,6 +34,8 @@ async function apiFetch() {
   
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width',50)
+    weatherIcon.setAttribute('height',50)
     captionDesc.textContent = desc;
   }
   
