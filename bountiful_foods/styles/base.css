@@ -2,7 +2,7 @@
 
 
 :root {
-    --primary-color: rgb(139, 195, 75);
+    --primary-color: rgba(139, 195, 75, 0.722);
     --secondary-color: #795548;
     --accent-color: #FFC107;
 }
@@ -148,9 +148,9 @@ a {
 
 /*---Images---*/
 .logo {
-    border: 2px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
     border-radius: 15px;
-    box-shadow: 2px 2px 8px  black;
+    box-shadow: 3px 3px 8px  black;
     margin: 5px;
 }
 
@@ -191,6 +191,7 @@ img {
     border: 2px solid #795548;
     margin: 10px;
     background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
+    box-shadow: 3px 3px 8px black;
 
 
 }
@@ -200,11 +201,12 @@ img {
     margin: 10px;
     text-align: center;
     background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
+    box-shadow: 3px 3px 8px black;
 
 
 }
 #ten-day div{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 #ten-day div:nth-child(4){
@@ -212,7 +214,8 @@ img {
 }
 
 .doubleContainer {
-    border-top: 1px solid black;
+    border-top: 1px solid var(--secondary-color);
+    
 }
 .doubleContainer div {
     display: inline-block;
@@ -225,11 +228,12 @@ img {
 
 .doubleContainer div h2 {
     margin-bottom: 30px ;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
     margin-top: -5px;
 }
 
 
 .doubleContainer div:nth-child(2) {
-    border-left: 1px solid black;
+
+    margin-left: 0px;
 }

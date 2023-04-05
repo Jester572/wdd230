@@ -49,15 +49,23 @@
     /*-----body Grid-----*/
     #body-grid {
         display: grid;
-        grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 25% 50% 25%;
+        
     }
 
     #weather {
         grid-column: 1;
+
     }
     #ten-day {
         grid-column: 1;
         grid-row: 2;
         text-align: center;
+
+    }
+
+
+    #foodTruck {
+        grid-column: 3;
     }
 }

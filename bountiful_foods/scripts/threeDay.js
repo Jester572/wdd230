@@ -62,15 +62,15 @@ async function threeApiFetch() {
     // console.log(days)
     // console.log(temps)
     // console.log(lowTemps)
-    day1.innerHTML = `<pre><strong>${getDayOfWeek(days[0])} High:${temps[0]}&deg;F   Low:${lowTemps[0]}&deg;F</strong></pre>`
-    day2.innerHTML = `<pre><strong>${getDayOfWeek(days[1])} High:${temps[1]}&deg;F   Low:${lowTemps[1]}&deg;F</strong></pre>`
-    day3.innerHTML = `<pre><strong>${getDayOfWeek(days[2])} High:${temps[2]}&deg;F   Low:${lowTemps[2]}&deg;F</strong></pre>`
+    day1.innerHTML = `<pre><strong>${getDayOfWeek(days[0])} High:${temps[0]}&deg;F  Low:${lowTemps[0]}&deg;F</strong></pre>`
+    day2.innerHTML = `<pre><strong>${getDayOfWeek(days[1])} High:${temps[1]}&deg;F  Low:${lowTemps[1]}&deg;F</strong></pre>`
+    day3.innerHTML = `<pre><strong>${getDayOfWeek(days[2])} High:${temps[2]}&deg;F  Low:${lowTemps[2]}&deg;F</strong></pre>`
 
 
   }
   function getDayOfWeek (dt) {
     let dayOfWeek = daysOfWeek[dt];
-    return dayOfWeek.padEnd(9);
+    return dayOfWeek.padEnd(8);
   }
   
   threeApiFetch();
