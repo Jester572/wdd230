@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/medium.css">
     <link rel="stylesheet" type="text/css" href="./styles/large.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fresh.css">
+
 
 </head>
 <body>
@@ -30,8 +32,9 @@
             </nav>
 
             <div class="socialMedia">
-                <a href="#"><img src="./images/icons8-facebook-48.png" alt="Facebook Icon"></a>
-                <a href="#"><img src="./images/icons8-instagram-48.png" alt="Instagram Icon"></a>
+                <a href="#"><img src="./images/Twitter social icons - rounded square - blue (Icon).png" width="48" height="48" alt="Twitter Icon"></a>
+                <a href="#"><img src="./images/f_logo_RGB-Blue_512 (Icon).png" width="48" height="48" alt="Facebook Icon"></a>
+                <a href="#"><img src="./images/Instagram_Glyph_Gradient (Icon).png" width="48" height="48" alt="Instagram Icon"></a>
                 <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1289543,-117.2963824,20.91z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24" target="_blank"><strong>Locate Us! &#128205;</strong></a></p>
             </div>
 
@@ -55,6 +58,95 @@
 
 
     <main>
+        <h1>Mix & Match Your Favorite Drinks</h1>
+        <form class="sectionShadow" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">First Name* <input type="text" name="first name" required></label>
+                <label class="top">Last Name* <input type="text" name="last name" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235554567" required></label>
+                </fieldset>
+
+            <fieldset id="memberField">
+                <legend>Build Your Drink</legend>
+                <fieldset id="cupSize" >
+                    <legend>Size</legend>
+                    <div>
+                        <label class="sbs"><input type="radio" name="audience" value="Small"> Small </label>
+                        <label class="sbs"><input type="radio" name="audience" value="Medium"> Medium</label>
+                        <label class="sbs"><input type="radio" name="audience" value="Large"> Large</label>
+                        <label class="sbs"><input type="radio" name="audience" value="X-Large"> X-Large </label>
+                    </div>
+                </fieldset>
+                
+                <fieldset id="frozen">
+                    <legend>Freeze It</legend>
+                    <div>
+                        <label class="sbs"><input type="radio" name="audience" value="Ice"> Ice </label>
+                        <label class="sbs"><input type="radio" name="audience" value="Frozen Fruit"> Frozen Fruit</label>
+                        <label class="sbs"><input type="radio" name="audience" value="Sherbet"> Sherbet</label>
+                        <label class="sbs"><input type="radio" name="audience" value="Vanilla Ice-Cream"> Ice-Cream</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">Drink Sizes</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Non-Profit</th>
+                            <th scope="col">Bronze</th>
+                            <th scope="col">Silver</th>
+                            <th scope="col">Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Price(yearly)</th>
+                            <td>$0</td>
+                            <td>$200</td>
+                            <td>$350</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Trainings</th>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Event Discounts</th>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Special Meetings</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bi-Anual Dinner</th>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+            
+
+            <input type="hidden" name="datetime" id="loadDate">
+            <input type="submit" value="Apply for Membership" class="submitBtn">
+            
+        </form> 
 
     </main>
 

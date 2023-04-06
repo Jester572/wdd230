@@ -3,5 +3,24 @@
         box-shadow: none;
     }
 
+    #hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design800.webp") ;
+    }
+
+    #products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr .5fr;
+    }
+
+    #createProduct {
+        grid-row: 2;
+    
+    }
+    .product:nth-child(2){
+        grid-row: 1;
+    }
+
+
 
 }

@@ -4,7 +4,7 @@
 :root {
     --primary-color: rgba(139, 195, 75, 0.722);
     --secondary-color: #795548;
-    --accent-color: #FFC107;
+    --accent-color: rgb(255, 193, 7);
 }
 
 
@@ -136,9 +136,13 @@ pre {
 body {
     margin: 0px;
     
-
 }
 
+.sectionShadow {
+    box-shadow: 3px 3px 8px black;
+    border: 2px solid #795548;
+    margin: 10px;
+}
 
 /*---Links--*/
 a {
@@ -166,7 +170,7 @@ img {
 
 /*Hero image*/
 #hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design.webp") ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design500.webp") ;
     width: 100%;
     height: auto;
     background-position: center;
@@ -188,21 +192,13 @@ img {
 #weather {
     display: block;
     text-align: center;
-    border: 2px solid #795548;
-    margin: 10px;
     background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
-    box-shadow: 3px 3px 8px black;
-
 
 }
 
 #ten-day {
-    border: 2px solid #795548;
-    margin: 10px;
     text-align: center;
     background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
-    box-shadow: 3px 3px 8px black;
-
 
 }
 #ten-day div{
@@ -236,4 +232,63 @@ img {
 .doubleContainer div:nth-child(2) {
 
     margin-left: 0px;
+}
+
+.product{
+    text-align: center;
+    margin: 20px 10px;
+    grid-row: 1;
+}
+
+.product:nth-child(2){
+    grid-row: 2;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr .5fr;
+    background-color: rgba(255, 193, 7, .75);
+
+}
+
+#products img {
+    width: auto;
+    height: auto;
+}
+
+.product p {
+    margin: 0px 40px;
+}
+
+#createProduct {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+
+}
+
+.button {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 3px 3px 8px  black;
+}
+
+#foodTruck {
+    background-color: var(--primary-color);
+}
+
+form {
+    margin: auto;
 }

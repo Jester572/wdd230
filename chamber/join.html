@@ -45,13 +45,12 @@
         <h2>Enter the information and desired selections to become a part of this great organization!</h2>
 
         <form method="get" action="thankyou.html">
-            <fieldset>
+            <fieldset id="personalInfo">
                 <legend>Personal Information</legend>
                 <label class="top">First Name* <input type="text" name="first name" required></label>
                 <label class="top">Last Name* <input type="text" name="last name" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235554567" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            </fieldset>
+                </fieldset>
 
             <fieldset>
                 <legend>Company Information</legend>
@@ -126,7 +125,8 @@
             <input type="hidden" name="datetime" id="loadDate">
             <input type="submit" value="Apply for Membership" class="submitBtn">
             
-        </form>
+        </form>       <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+     
 
     </main>
 
