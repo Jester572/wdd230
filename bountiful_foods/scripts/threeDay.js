@@ -29,7 +29,11 @@ async function threeApiFetch() {
     let tMin = 0
     let tempIter = 0
     let dayNum = new Date(weatherData.list[0].dt * 1000).getDay()
+    
     for (i = 0; i < weatherData.list.length; i++)  {
+        if (dayNum === 7) {
+            dayNum = 0;
+        }
         if (new Date(weatherData.list[i].dt * 1000).getDay() != new Date().getDay()) {
             if (dayNum == new Date(weatherData.list[i].dt * 1000).getDay()) {
                 if (tMax < weatherData.list[i].main.temp_max.toFixed(0)) {
@@ -59,7 +63,7 @@ async function threeApiFetch() {
             }        
         }
     }
-    // console.log(days)
+    console.log(days)
     // console.log(temps)
     // console.log(lowTemps)
     day1.innerHTML = `<pre><strong>${getDayOfWeek(days[0])} High:${temps[0]}&deg;F  Low:${lowTemps[0]}&deg;F</strong></pre>`
@@ -70,6 +74,7 @@ async function threeApiFetch() {
   }
   function getDayOfWeek (dt) {
     let dayOfWeek = daysOfWeek[dt];
+    console.log(dayOfWeek);
     return dayOfWeek.padEnd(8);
   }
   
