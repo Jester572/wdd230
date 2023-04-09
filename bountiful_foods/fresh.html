@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="styles/medium.css" />
     <link rel="stylesheet" type="text/css" href="styles/large.css" />
     <link rel="stylesheet" type="text/css" href="styles/fresh.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fresh_medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fresh_large.css" />
   </head>
 
   <body>
@@ -89,7 +91,7 @@
           /></label>
         </fieldset>
 
-        <fieldset id="memberField">
+        <fieldset id="orderField">
           <legend>Build Your Drink</legend>
           <fieldset id="cupSize">
             <legend>Size</legend>
@@ -136,23 +138,28 @@
             <select
               name="fruit1"
               id="fruit1"
-              class="fruitsDropdown sbs"
+              class="fruitsDropdown"
             ></select>
 
             <label for="fruit2">Fruit 2</label>
             <select
               name="fruit2"
               id="fruit2"
-              class="fruitsDropdown sbs"
+              class="fruitsDropdown"
             ></select>
 
             <label for="fruit3">Fruit 3</label>
             <select
               name="fruit3"
               id="fruit3"
-              class="fruitsDropdown sbs"
+              class="fruitsDropdown"
             ></select>
           </fieldset>
+          <label for="specialInstructions">Special Instructions:</label>
+          <textarea
+            id="specialInstructions"
+            name="specialInstructions"
+          ></textarea>
         </fieldset>
 
         <input type="hidden" name="datetime" id="loadDate" />
