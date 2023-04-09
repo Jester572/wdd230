@@ -92,11 +92,24 @@ async function getSugars() {
     }
 }
 
-function fruitInfo() {
-    const fruit = getFruit()
-    const calories = getCalories()
-    const carbs = getCarbohydrates()
-    const fat = getFat()
-    const sugars = getSugars()
-    const protein = getProtein()
+async function fruitInfo() {
+    const fruitNames = await getFruit()
+    const calories = await getCalories()
+    const carbs = await getCarbohydrates()
+    const fat = await getFat()
+    const sugars = await getSugars()
+    const protein = await getProtein()
+    const fruitSections = document.querySelectorAll(".fruitsDropdown")
+    
+    
+    fruitSections.forEach((section) => {
+        for (i = 0; i < fruitNames.length; i++) {
+            const fruitOption = document.createElement('option')
+            fruitOption.setAttribute('value', fruitNames[i])
+            fruitOption.innerText = fruitNames[i]
+            section.appendChild(fruitOption)
+        }
+    })
 }
+
+fruitInfo()
