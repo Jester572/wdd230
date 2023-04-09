@@ -59,7 +59,7 @@
 
     <main>
         <h1>Mix & Match Your Favorite Drinks</h1>
-        <form class="sectionShadow" method="get" action="thankyou.html">
+        <form class="sectionShadow" method="get">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top">First Name* <input type="text" name="first name" required></label>
@@ -72,20 +72,20 @@
                 <fieldset id="cupSize" >
                     <legend>Size</legend>
                     <div>
-                        <label class="sbs"><input type="radio" name="audience" value="Small"> Small </label>
-                        <label class="sbs"><input type="radio" name="audience" value="Medium"> Medium</label>
-                        <label class="sbs"><input type="radio" name="audience" value="Large"> Large</label>
-                        <label class="sbs"><input type="radio" name="audience" value="X-Large"> X-Large </label>
+                        <label class="sbs"><input type="radio" name="size" value="Small"> Small </label>
+                        <label class="sbs"><input type="radio" name="size" value="Medium"> Medium</label>
+                        <label class="sbs"><input type="radio" name="size" value="Large"> Large</label>
+                        <label class="sbs"><input type="radio" name="size" value="X-Large"> X-Large </label>
                     </div>
                 </fieldset>
                 
                 <fieldset id="frozen">
                     <legend>Freeze It</legend>
                     <div>
-                        <label class="sbs"><input type="radio" name="audience" value="Ice"> Ice </label>
-                        <label class="sbs"><input type="radio" name="audience" value="Frozen Fruit"> Frozen Fruit</label>
-                        <label class="sbs"><input type="radio" name="audience" value="Sherbet"> Sherbet</label>
-                        <label class="sbs"><input type="radio" name="audience" value="Vanilla Ice-Cream"> Ice-Cream</label>
+                        <label class="sbs"><input type="radio" name="freeze" value="Ice"> Ice </label>
+                        <label class="sbs"><input type="radio" name="freeze" value="Frozen Fruit"> Frozen Fruit</label>
+                        <label class="sbs"><input type="radio" name="freeze" value="Sherbet"> Sherbet</label>
+                        <label class="sbs"><input type="radio" name="freeze" value="Vanilla Ice-Cream"> Ice-Cream</label>
                     </div>
                 </fieldset>
 
@@ -101,64 +101,18 @@
                     <select name="fruit3" id="fruit3" class="fruitsDropdown sbs"></select>  
                 </fieldset>
             </fieldset>
-                <!-- <table>
-                    <thead>
-                        <tr>
-                            <th colspan="5">Drink Sizes</th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th scope="col">Non-Profit</th>
-                            <th scope="col">Bronze</th>
-                            <th scope="col">Silver</th>
-                            <th scope="col">Gold</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Price(yearly)</th>
-                            <td>$0</td>
-                            <td>$200</td>
-                            <td>$350</td>
-                            <td>$500</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Trainings</th>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Event Discounts</th>
-                            <td>❌</td>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Special Meetings</th>
-                            <td>❌</td>
-                            <td>❌</td>
-                            <td>✔️</td>
-                            <td>✔️</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Bi-Anual Dinner</th>
-                            <td>❌</td>
-                            <td>❌</td>
-                            <td>❌</td>
-                            <td>✔️</td>
-                        </tr>
-                    </tbody>
-                </table> -->
-
-            
 
             <input type="hidden" name="datetime" id="loadDate">
-            <input type="submit" value="Apply for Membership" class="submitBtn">
+            <input type="button" value="Submit Order" id="submitBtn">
             
-        </form> 
+        </form>
+        <div class="orderConfirmation">
+            <h2>Order Received</h2>
+            <p>Thank you for placing an order with Bountiful Foods</p>
+            <div id="orderInfo">
+
+            </div>
+        </div>
 
     </main>
 

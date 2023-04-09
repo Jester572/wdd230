@@ -1,3 +1,23 @@
+const confirmation = document.querySelector(".orderConfirmation")
+const submit = document.getElementById("submitBtn");
+let count = localStorage.getItem('numOrders') || 0;
+
+
+  
+submit.addEventListener("click", () => {
+    const firstName = document.querySelector('input[name="first name"]').value;
+    const lastName = document.querySelector('input[name="last name"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    if (firstName === "" || lastName === "" || phone === "") {
+        alert("Please fill out all required fields in Contact Information");
+        return false;
+    } else {
+        confirmation.setAttribute("id","show");
+        count++;
+        localStorage.setItem('numOrders', count);
+        console.log(`Number of Submitted orders ${count}`);
+    }
+})
 async function getFruit() {
     try {
         const response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')

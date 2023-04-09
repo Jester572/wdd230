@@ -21,6 +21,10 @@
         grid-row: 1;
     }
 
+    #numDrinks{
+        grid-column: 1 / span 2;
+    }
+
 
 
 }

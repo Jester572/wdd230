@@ -5,3 +5,7 @@ const hamburger = document.querySelector("#menu");
 
 hamburger.addEventListener("click", () => {mainNav.classList.toggle("responsive")}, false);
 hamburger.addEventListener("click", () => {if(hamburger.innerHTML == "X"){hamburger.innerHTML = "&#9776;";} else {hamburger.innerHTML = "X";};});
+
+let count = localStorage.getItem('numOrders') || 0;
+
+document.querySelector("#numDrinks p").innerHTML = count
