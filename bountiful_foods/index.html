@@ -1,154 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bountiful Foods</title>
-    <meta name="description" content="The main page for Bountiful Foods website">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <link rel="stylesheet" type="text/css" href="styles/medium.css">
-    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <meta
+      name="description"
+      content="The main page for Bountiful Foods website"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/large.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
-        <div id="upperHeader">
-
-            <div class="logo">
-                <img src="./images/android-chrome-50x50.png" width="50" height="50" alt="Bountiful Foods Logo">
-                <h1>Bountiful Foods</h1>
-            </div>
-
-
-            <nav id="large-navigation">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="fresh.html">Get It Fresh!</a></li>
-                </ul>
-            </nav>
-
-            <div class="socialMedia">
-                <a href="#"><img src="./images/Twitter social icons - rounded square - blue (Icon).png" width="48" height="48" alt="Twitter Icon"></a>
-                <a href="#"><img src="./images/f_logo_RGB-Blue_512 (Icon).png" width="48" height="48" alt="Facebook Icon"></a>
-                <a href="#"><img src="./images/Instagram_Glyph_Gradient (Icon).png" width="48" height="48" alt="Instagram Icon"></a>
-                <p><a href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1289543,-117.2963824,20.91z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24" target="_blank"><strong>Locate Us! &#128205;</strong></a></p>
-            </div>
-
+      <div id="upperHeader">
+        <div class="logo">
+          <img
+            src="./images/android-chrome-50x50.png"
+            width="50"
+            height="50"
+            alt="Bountiful Foods Logo"
+          />
+          <h1>Bountiful Foods</h1>
         </div>
 
-        <div id="lowerHeader">
+        <nav id="large-navigation">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="fresh.html">Get It Fresh!</a></li>
+          </ul>
+        </nav>
 
-            <nav id="small-navigation">
-                <button id="menu">&#9776;</button>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="fresh.html">Get It Fresh!</a></li>
-                </ul>
-            </nav>
-
+        <div class="socialMedia">
+          <a href="#"
+            ><img
+              src="./images/Twitter social icons - rounded square - blue (Icon).png"
+              width="48"
+              height="48"
+              alt="Twitter Icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/f_logo_RGB-Blue_512 (Icon).png"
+              width="48"
+              height="48"
+              alt="Facebook Icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/Instagram_Glyph_Gradient (Icon).png"
+              width="48"
+              height="48"
+              alt="Instagram Icon"
+          /></a>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1289543,-117.2963824,20.91z/data=!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24"
+              target="_blank"
+              ><strong>Locate Us! &#128205;</strong></a
+            >
+          </p>
         </div>
+      </div>
+
+      <div id="lowerHeader">
+        <nav id="small-navigation">
+          <button id="menu">&#9776;</button>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="fresh.html">Get It Fresh!</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-
-
-
     <main>
-        <div id="hero-image">
-            <div class="hero-text">
-                <h1>Bountiful Foods</h1>
-                <p>Fresh Food From Local Farms</p>
-            </div> 
+      <div id="hero-image">
+        <div class="hero-text">
+          <h1>Bountiful Foods</h1>
+          <p>Fresh Food From Local Farms</p>
         </div>
-        <div id="body-grid">
+      </div>
+      <div id="body-grid">
+        <div class="sectionShadow" id="weather">
+          <h2>Current Weather</h2>
+          <figure id="weather-icon">
+            <p><span id="temp"></span></p>
+            <p>
+              <strong>Humidity:<span id="humidity"></span>%</strong>
+            </p>
+            <img src="" alt="" />
+            <figcaption></figcaption>
+          </figure>
 
-            <div class="sectionShadow" id="weather">
-                <h2>Current Weather</h2>
-                <figure id="weather-icon">
-                    <p><span id="temp"></span></p>
-                    <p><strong>Humidity:<span id="humidity"></span>%</strong></p>
-                    <img src="" alt=""  />
-                    <figcaption></figcaption>
-                </figure>            
-                
-                <div class="doubleContainer">
-                    <div>
-                        <h2>High/Low</h2>
-                        <p>High:<span id="tempHigh"></span> &deg;F</p>
-                        <p>Low:<span id="tempLow"></span> &deg;F</p>
-                    </div>
-                    <div>
-                        <h2>Wind</h2>
-                        <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
-                        <p>Wind Chill: <span id="windChill"></span></p>
-                    </div>
-                </div>
+          <div class="doubleContainer">
+            <div>
+              <h2>High/Low</h2>
+              <p>High:<span id="tempHigh"></span> &deg;F</p>
+              <p>Low:<span id="tempLow"></span> &deg;F</p>
             </div>
-            <div class="sectionShadow" id="ten-day">
-                <h2>3-Day Forecast</h2>
-                <div id="day1">
-                    <p class="wrap"></p>
-                </div>
-                <div id="day2">
-                    <p class="wrap"></p>
-                </div>
-                <div id="day3">
-                    <p class="wrap"></p>
-                </div>
+            <div>
+              <h2>Wind</h2>
+              <p>Wind Speed: <span id="windSpeed"></span> MPH</p>
+              <p>Wind Chill: <span id="windChill"></span></p>
             </div>
-
-            <div class="sectionShadow" id="foodTruck">
-                <div class = "sectionShadow" id="truckLocations">
-                    <h2>Produce Truck Locations</h2>
-                </div>
-                <div class="sectionShadow" id="Sales">
-                    <h2>Check Out Our Sales</h2>
-                </div>
-                <div class="sectionShadow" id="PreOrder">
-                    <h2>Pre-Order Bulk Produce</h2>
-                </div>
-
-            </div>
-
-            <div class="sectionShadow" id="products">
-                <div id="numDrinks">
-                    <h2>Number of Drinks Ordered:</h2>
-                    <p></p>
-
-                </div>
-                <div class="product">
-                    <h2>Strawberry Sunrise</h2>
-                    <img src="./images/berry Smoothie.webp" width="256" height="256" alt="Strawberry Sunrise">
-                    <p>Ingredients: Strawberries, Plum, Mango, Kale, Orange Sherbet</p>
-                </div>
-                <div class="product">
-                    <h2>Green Garden Lightning</h2>
-                    <img src="./images/smoothie.webp" width="256" height="256"  alt="Green Garden Lightning">
-                    <p>Ingredients: Spinach, Broccoli, Mango, Pineapple, Banana </p>
-                </div>
-                <div class="product" id="createProduct">
-                    <h2>Mix and Match</h2>
-                    <a class="button" href="fresh.html">Create Your Own</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="sectionShadow" id="ten-day">
+          <h2>3-Day Forecast</h2>
+          <div id="day1">
+            <p class="wrap"></p>
+          </div>
+          <div id="day2">
+            <p class="wrap"></p>
+          </div>
+          <div id="day3">
+            <p class="wrap"></p>
+          </div>
+        </div>
+
+        <div class="sectionShadow" id="foodTruck">
+          <div class="sectionShadow" id="truckLocations">
+            <h2>Produce Truck Locations</h2>
+          </div>
+          <div class="sectionShadow" id="Sales">
+            <h2>Check Out Our Sales</h2>
+          </div>
+          <div class="sectionShadow" id="PreOrder">
+            <h2>Pre-Order Bulk Produce</h2>
+          </div>
+        </div>
+
+        <div class="sectionShadow" id="products">
+          <div id="numDrinks">
+            <h2>Number of Drinks Ordered:</h2>
+            <p id="drinks"></p>
+          </div>
+          <div class="product">
+            <h2>Strawberry Sunrise</h2>
+            <img
+              src="./images/berry Smoothie.webp"
+              width="256"
+              height="256"
+              alt="Strawberry Sunrise"
+            />
+            <p>Ingredients: Strawberries, Plum, Mango, Kale, Orange Sherbet</p>
+          </div>
+          <div class="product">
+            <h2>Green Garden Lightning</h2>
+            <img
+              src="./images/smoothie.webp"
+              width="256"
+              height="256"
+              alt="Green Garden Lightning"
+            />
+            <p>Ingredients: Spinach, Broccoli, Mango, Pineapple, Banana</p>
+          </div>
+          <div class="product" id="createProduct">
+            <h2>Mix and Match</h2>
+            <a class="button" href="fresh.html">Create Your Own</a>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-
-
-    <footer>
-
-    </footer>
-
-    
-    
-</body>
-<script src="scripts/main.js"></script>
-<script src="scripts/weatherapi.js"></script>
-<script src="scripts/threeDay.js"></script>
-<script src="scripts/windchill.js"></script>
+    <footer></footer>
+  </body>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/weatherapi.js"></script>
+  <script src="scripts/threeDay.js"></script>
+  <script src="scripts/windchill.js"></script>
 </html>

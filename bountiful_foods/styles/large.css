@@ -2,18 +2,21 @@
     #menu {
         display: none;
     }
+
     nav ul li {
         display: block;
         text-align: center;
 
     }
+
     nav ul {
         display: flex;
         text-align: center;
-        box-shadow: 2px 2px 8px  black;
+        box-shadow: 2px 2px 8px black;
         border: 3px solid var(--secondary-color);
 
     }
+
     #small-navigation {
         display: none;
     }
@@ -25,15 +28,16 @@
     .socialMedia {
         margin: 0px;
     }
+
     #hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design.webp") ;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design.webp");
     }
-    
+
     .hero-text {
         padding: 100px;
         text-align: center;
         position: relative;
-        top:3.5em;
+        top: 3.5em;
         /* right: 40%; */
         font-size: x-large;
         color: white;
@@ -44,13 +48,14 @@
     #body-grid {
         display: grid;
         grid-template-columns: 25% 50% 25%;
-        
+
     }
 
     #weather {
         grid-column: 1;
 
     }
+
     #ten-day {
         grid-column: 1;
         grid-row: 2;
@@ -66,12 +71,12 @@
 
     #products {
         grid-column: 3;
-        grid-row: 1 /span 2 ;
+        grid-row: 1 /span 2;
         display: block;
- 
+
     }
 
-    #products img{
+    #products img {
         display: block;
         width: 75%;
         height: auto;
@@ -82,7 +87,5 @@
 
     /*-----Form-----*/
 
-    .top {
-        
-    }
-}   
+    .top {}
+}

@@ -3,9 +3,14 @@
 const mainNav = document.querySelector("#small-navigation");
 const hamburger = document.querySelector("#menu");
 
-hamburger.addEventListener("click", () => {mainNav.classList.toggle("responsive")}, false);
-hamburger.addEventListener("click", () => {if(hamburger.innerHTML == "X"){hamburger.innerHTML = "&#9776;";} else {hamburger.innerHTML = "X";};});
+hamburger.addEventListener("click", () => { mainNav.classList.toggle("responsive") }, false);
+hamburger.addEventListener("click", () => { if (hamburger.innerHTML == "X") { hamburger.innerHTML = "&#9776;"; } else { hamburger.innerHTML = "X"; }; });
 
-let count = localStorage.getItem('numOrders') || 0;
+if (localStorage.getItem('numOrders') === null) {
+    localStorage.setItem('numOrders', 0)
+}
+let mainCount = localStorage.getItem('numOrders')
 
-document.querySelector("#numDrinks p").innerHTML = count
+if (document.querySelector("#drinks") != null) {
+    document.querySelector("#drinks").innerHTML = mainCount
+}

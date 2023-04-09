@@ -14,7 +14,6 @@ header {
     display: block;
     background-color: var(--primary-color);
     padding: 5px
-
 }
 
 #upperHeader {
@@ -37,7 +36,7 @@ header {
 
 
 nav {
-    margin:  1em auto;
+    margin: 1em auto;
     margin-top: 3em;
     display: flex;
 
@@ -46,16 +45,17 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0px;
-    margin:0px;
-    background-color: #4e7d193f;  
-    
+    margin: 0px;
+    background-color: #4e7d193f;
+
 }
+
 nav ul li {
     display: none;
     flex: 1 1 auto;
     background-color: var(--accent-color);
-    border: 2px solid rgba(0,0,0, .30);
-    margin: 5px; 
+    border: 2px solid rgba(0, 0, 0, .30);
+    margin: 5px;
 
 }
 
@@ -92,7 +92,7 @@ nav ul li a {
     color: black;
 }
 
-.socialMedia a { 
+.socialMedia a {
     padding: 5px;
     padding-top: 20%;
 }
@@ -102,9 +102,9 @@ a:hover {
 }
 
 #menu {
-    width:100%;
-    display:block;
-    text-align:center;
+    width: 100%;
+    display: block;
+    text-align: center;
     padding: 5px;
 }
 
@@ -113,10 +113,12 @@ a:hover {
     flex-direction: column;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Delicious Handrawn', sans-serif;
     margin: 10px;
-    
+
 
 }
 
@@ -126,7 +128,7 @@ pre {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size:larger;
+    font-size: larger;
     /* font-family: auto; */
 }
 
@@ -135,7 +137,7 @@ pre {
 
 body {
     margin: 0px;
-    
+
 }
 
 .sectionShadow {
@@ -154,7 +156,7 @@ a {
 .logo {
     border: 3px solid var(--secondary-color);
     border-radius: 15px;
-    box-shadow: 3px 3px 8px  black;
+    box-shadow: 3px 3px 8px black;
     margin: 5px;
 }
 
@@ -170,7 +172,7 @@ img {
 
 /*Hero image*/
 #hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design500.webp") ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/Untitled-design500.webp");
     width: 100%;
     height: auto;
     background-position: center;
@@ -183,7 +185,7 @@ img {
     padding: 50px;
     text-align: center;
     position: relative;
-    top:2.5em;
+    top: 2.5em;
     color: white;
 }
 
@@ -192,27 +194,29 @@ img {
 #weather {
     display: block;
     text-align: center;
-    background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
+    background-image: linear-gradient(rgba(78, 195, 241, 0.81), rgba(139, 195, 75, 0.722));
 
 }
 
 #ten-day {
     text-align: center;
-    background-image: linear-gradient(rgba(78, 195, 241, 0.81),rgba(139, 195, 75, 0.722));
+    background-image: linear-gradient(rgba(78, 195, 241, 0.81), rgba(139, 195, 75, 0.722));
 
 }
-#ten-day div{
+
+#ten-day div {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-#ten-day div:nth-child(4){
+#ten-day div:nth-child(4) {
     border-bottom: none;
 }
 
 .doubleContainer {
     border-top: 1px solid var(--secondary-color);
-    
+
 }
+
 .doubleContainer div {
     display: inline-block;
     padding: 15px 25px;
@@ -223,7 +227,7 @@ img {
 }
 
 .doubleContainer div h2 {
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
     border-bottom: 1px solid var(--secondary-color);
     margin-top: -5px;
 }
@@ -234,17 +238,17 @@ img {
     margin-left: 0px;
 }
 
-.product{
+.product {
     text-align: center;
     margin: 20px 10px;
     grid-row: 1;
 }
 
-.product:nth-child(2){
+.product:nth-child(2) {
     grid-row: 2;
 }
 
-#products{
+#products {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr .5fr;
@@ -282,7 +286,7 @@ img {
 }
 
 .button:hover {
-    box-shadow: 3px 3px 8px  black;
+    box-shadow: 3px 3px 8px black;
 }
 
 #foodTruck {
@@ -307,6 +311,6 @@ form {
     text-align: center;
 }
 
-#numDrinks p{
+#numDrinks p {
     font-size: xx-large;
 }
