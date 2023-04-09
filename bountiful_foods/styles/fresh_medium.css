@@ -9,5 +9,13 @@
         grid-column: 1 / span 3;
     }
 
+    .orderConfirmation {
+        position: fixed;
+        bottom: 10%;
+        top: 10%;
+        left: 30%;
+        right: 30%;
+    }
+
 
 }

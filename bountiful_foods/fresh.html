@@ -83,7 +83,12 @@
             >First Name* <input type="text" name="first name" required
           /></label>
           <label class="top"
-            >Last Name* <input type="text" name="last name" required
+            >E-mail*
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="123example@example.com"
           /></label>
           <label class="top"
             >Phone*
@@ -112,21 +117,21 @@
           </fieldset>
 
           <fieldset id="frozen">
-            <legend>Freeze It</legend>
+            <legend>Drink Base</legend>
             <div>
               <label class="sbs"
-                ><input type="radio" name="freeze" value="Ice" /> Ice
+                ><input type="radio" name="base" value="Ice" /> Ice
               </label>
               <label class="sbs"
-                ><input type="radio" name="freeze" value="Frozen Fruit" />
-                Frozen Fruit</label
+                ><input type="radio" name="base" value="Frozen Fruit" /> Frozen
+                Fruit</label
               >
               <label class="sbs"
-                ><input type="radio" name="freeze" value="Sherbet" />
+                ><input type="radio" name="base" value="Sherbet" />
                 Sherbet</label
               >
               <label class="sbs"
-                ><input type="radio" name="freeze" value="Vanilla Ice-Cream" />
+                ><input type="radio" name="base" value="Vanilla Ice-Cream" />
                 Ice-Cream</label
               >
             </div>
@@ -135,25 +140,13 @@
           <fieldset id="fruit">
             <legend>Choose Your Fruit</legend>
             <label for="fruit1">Fruit 1</label>
-            <select
-              name="fruit1"
-              id="fruit1"
-              class="fruitsDropdown"
-            ></select>
+            <select name="fruit1" id="fruit1" class="fruitsDropdown"></select>
 
             <label for="fruit2">Fruit 2</label>
-            <select
-              name="fruit2"
-              id="fruit2"
-              class="fruitsDropdown"
-            ></select>
+            <select name="fruit2" id="fruit2" class="fruitsDropdown"></select>
 
             <label for="fruit3">Fruit 3</label>
-            <select
-              name="fruit3"
-              id="fruit3"
-              class="fruitsDropdown"
-            ></select>
+            <select name="fruit3" id="fruit3" class="fruitsDropdown"></select>
           </fieldset>
           <label for="specialInstructions">Special Instructions:</label>
           <textarea
@@ -168,7 +161,19 @@
       <div class="orderConfirmation">
         <h2>Order Received</h2>
         <p>Thank you for placing an order with Bountiful Foods</p>
-        <div id="orderInfo"></div>
+        <div id="orderInfo">
+          <p id="customerName"></p>
+          <p id="customerEmail"></p>
+          <p id="customerPhone"></p>
+          <p id="drinkSize"></p>
+          <p id="drinkBase"></p>
+          <p id="drinkFruit1"></p>
+          <p id="drinkFruit2"></p>
+          <p id="drinkFruit3"></p>
+          <p id="instructions"></p>
+        </div>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="fresh.html">Order Another</a></button>
       </div>
     </main>
 
